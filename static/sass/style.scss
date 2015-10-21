@@ -1,0 +1,108 @@
+@import "lib/bourbon/bourbon";
+@import "lib/neat/neat";
+
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+* {
+  font-family: 'Raleway', sans-serif;
+
+  a {
+    text-decoration: none;
+    color: #687882;
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: inline-block;
+  }
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  text-align: center;
+}
+
+header {
+  padding: 10px 0;
+
+  nav {
+    padding: 5px 0 0 0;
+
+    a {
+      color: #CC434F;
+    }
+
+    li {
+      font-family: 'Cousine';
+      padding: 0 25px;
+    }
+
+  }
+
+  h1 {
+    font-family: 'MarzoW00-Regular';
+    color: #696766;
+    font-size: 40px;
+  }
+
+  p {
+    font-family: 'Cousine';
+    color: #CC434F;
+    margin: 15px 0 5px 0;
+  }
+}
+
+.hero {
+  background: url('../img/rh1.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 500px;
+}
+
+main {
+  @include outer-container;
+
+  section {
+    padding: 40px;
+
+    @include desktop {
+      height: 300px;
+    }
+  }
+
+  .bio {
+    border-bottom: 1px solid;
+  }
+
+  .social {
+    text-align: center;
+    padding: 20px 0 0 0;
+    i {
+      padding: 0 20px 0 0;
+    }
+  }
+}
