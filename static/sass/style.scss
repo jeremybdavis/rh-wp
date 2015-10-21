@@ -40,18 +40,19 @@ h1 {
   padding: 0;
 }
 
-header, footer {
-  text-align: center;
-}
-
 header {
   padding: 10px 0;
+  text-align: center;
 
   nav {
-    padding: 5px 0 0 0;
+    padding: 5px 0;
 
     a {
       color: #CC434F;
+
+      &:hover {
+        color: lighten(#cc434f, 15%);
+      }
     }
 
     li {
@@ -74,35 +75,154 @@ header {
   }
 }
 
-.hero {
-  background: url('../img/rh1.jpg');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  position: relative;
-  height: 500px;
-}
-
 main {
   @include outer-container;
+  padding: 0 10px;
+
+  @include tablet {
+    padding: 0 25px;
+  }
+
+  @include desktop {
+    padding: 0;
+  }
+
+  .hero {
+    background: url('../img/rh1.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 500px;
+    margin: 0 0 75px 0;
+  }
 
   section {
-    padding: 40px;
-
-    @include desktop {
-      height: 300px;
+    h2 {
+      font-family: 'Cousine';
+      color: #CC434F;
+      font-size: 18px;
+      font-weight: 400;
     }
   }
 
   .bio {
-    border-bottom: 1px solid;
+    @include span-columns(12);
+    h1 {
+      letter-spacing: 0.3em;
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    p {
+      line-height: 1.6em;
+      color: #616161;
+    }
+
+    img {
+      @include span-columns(12);
+    }
+
+    @include tablet {
+      .bio-content {
+        @include span-columns(6);
+        padding: 25px 0 0 0;
+      }
+      img {
+        @include span-columns(6);
+        display: block;
+      }
+    }
+
+    @include desktop {
+      .bio-content {
+        @include span-columns(6);
+        padding: 45px 45px 0 0;
+      }
+      img {
+        @include span-columns(6);
+        display: block;
+      }
+    }
   }
 
-  .social {
+  .contact {
+    clear: both;
+    padding-top: 50px;
     text-align: center;
-    padding: 20px 0 0 0;
-    i {
-      padding: 0 20px 0 0;
+
+    @include desktop {
+      text-align: left;
+    }
+
+    .social {
+      padding: 20px 0 0 0;
+      i {
+        padding: 0 20px 0 0;
+      }
+
+      a {
+        &:hover {
+          color: #d6e6e6;
+        }
+      }
+    }
+  }
+
+}
+
+footer {
+  height: 70px;
+  margin: 75px 0 0 0;
+  color: #616161;
+
+  a {
+    &:hover {
+      color: #d6e6e6;
+    }
+  }
+
+  .footer-content {
+    text-align: center;
+    padding: 10px 0 0 0;
+
+    @include tablet {
+      padding: 35px 0 0 0;
+    }
+
+    @include desktop {
+      padding: 35px 0 0 0;
+    }
+  }
+
+  .footer-l {
+    padding: 0 0 10px 0;
+    font-size: 15px;
+
+    @include tablet {
+      float: left;
+    }
+
+    @include desktop {
+      float: left;
+    }
+  }
+
+  .footer-r {
+    @include tablet {
+      float: right;
+    }
+
+    @include desktop {
+      float: right;
+    }
+  }
+
+  .footer-links {
+    font-size: 20px;
+
+    li {
+      padding: 0 5px;
     }
   }
 }
