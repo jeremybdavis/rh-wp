@@ -40,12 +40,9 @@ h1 {
   padding: 0;
 }
 
-header, footer {
-  text-align: center;
-}
-
 header {
   padding: 10px 0;
+  text-align: center;
 
   nav {
     padding: 5px 0 0 0;
@@ -74,35 +71,113 @@ header {
   }
 }
 
-.hero {
-  background: url('../img/rh1.jpg');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  position: relative;
-  height: 500px;
-}
-
 main {
   @include outer-container;
+  padding: 0 10px;
+
+  @include tablet {
+    padding: 0 25px;
+  }
+
+  @include desktop {
+    padding: 0;
+  }
+
+  .hero {
+    background: url('../img/rh1.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 500px;
+    margin: 0 0 75px 0;
+  }
 
   section {
-    padding: 40px;
-
-    @include desktop {
-      height: 300px;
+    h2 {
+      font-family: 'Cousine';
+      color: #CC434F;
+      font-size: 18px;
+      font-weight: 400;
     }
   }
 
   .bio {
-    border-bottom: 1px solid;
+    h1 {
+      letter-spacing: 0.3em;
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    p {
+      line-height: 1.6em;
+      color: #616161;
+    }
+
+    img {
+      @include span-columns(12);
+    }
+
+    @include tablet {
+      .bio-content {
+        @include span-columns(6);
+      }
+      img {
+        @include span-columns(6);
+        display: block;
+      }
+    }
+
+    @include desktop {
+      .bio-content {
+        @include span-columns(6);
+        padding: 45px 45px 0 0px;
+      }
+      img {
+        @include span-columns(6);
+        display: block;
+      }
+    }
   }
 
-  .social {
+  .contact {
+    clear: both;
+    padding-top: 50px;
+
+    .social {
+      padding: 20px 0 0 0;
+      i {
+        padding: 0 20px 0 0;
+      }
+    }
+  }
+
+}
+
+footer {
+  height: 70px;
+  margin: 75px 0 0 0;
+  background-color: #afc7cc;
+  color: #5e5650;
+
+  a {
+    color: #5e5650;
+  }
+
+  .footer-content {
     text-align: center;
-    padding: 20px 0 0 0;
-    i {
-      padding: 0 20px 0 0;
+    padding: 10px 0 0 0;
+  }
+
+  .footer-l {
+    padding: 0 0 10px 0;
+  }
+
+  .footer-links {
+    font-size: 20px;
+
+    li {
+      padding: 0 5px;
     }
   }
 }

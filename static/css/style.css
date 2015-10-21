@@ -21,11 +21,9 @@ h1 {
   margin: 0;
   padding: 0; }
 
-header, footer {
-  text-align: center; }
-
 header {
-  padding: 10px 0; }
+  padding: 10px 0;
+  text-align: center; }
   header nav {
     padding: 5px 0 0 0; }
     header nav a {
@@ -42,33 +40,104 @@ header {
     color: #CC434F;
     margin: 15px 0 5px 0; }
 
-.hero {
-  background: url("../img/rh1.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  position: relative;
-  height: 500px; }
-
 main {
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding: 0 10px; }
   main::after {
     clear: both;
     content: "";
     display: table; }
-  main section {
-    padding: 40px; }
-    @media (min-width: 1024px) {
-      main section {
-        height: 300px; } }
-  main .bio {
-    border-bottom: 1px solid; }
-  main .social {
+  @media (min-width: 768px) and (max-width: 1023px) {
+    main {
+      padding: 0 25px; } }
+  @media (min-width: 1024px) {
+    main {
+      padding: 0; } }
+  main .hero {
+    background: url("../img/rh1.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 500px;
+    margin: 0 0 75px 0; }
+  main section h2 {
+    font-family: 'Cousine';
+    color: #CC434F;
+    font-size: 18px;
+    font-weight: 400; }
+  main .bio h1 {
+    letter-spacing: 0.3em;
+    font-size: 18px;
+    font-weight: 400; }
+  main .bio p {
+    line-height: 1.6em;
+    color: #616161; }
+  main .bio img {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    main .bio img:last-child {
+      margin-right: 0; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    main .bio .bio-content {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      main .bio .bio-content:last-child {
+        margin-right: 0; }
+    main .bio img {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      display: block; }
+      main .bio img:last-child {
+        margin-right: 0; } }
+  @media (min-width: 1024px) {
+    main .bio .bio-content {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      padding: 45px 45px 0 0px; }
+      main .bio .bio-content:last-child {
+        margin-right: 0; }
+    main .bio img {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      display: block; }
+      main .bio img:last-child {
+        margin-right: 0; } }
+  main .contact {
+    clear: both;
+    padding-top: 50px; }
+    main .contact .social {
+      padding: 20px 0 0 0; }
+      main .contact .social i {
+        padding: 0 20px 0 0; }
+
+footer {
+  height: 70px;
+  margin: 75px 0 0 0;
+  background-color: #afc7cc;
+  color: #5e5650; }
+  footer a {
+    color: #5e5650; }
+  footer .footer-content {
     text-align: center;
-    padding: 20px 0 0 0; }
-    main .social i {
-      padding: 0 20px 0 0; }
+    padding: 10px 0 0 0; }
+  footer .footer-l {
+    padding: 0 0 10px 0; }
+  footer .footer-links {
+    font-size: 20px; }
+    footer .footer-links li {
+      padding: 0 5px; }
 
 /*# sourceMappingURL=style.css.map */
