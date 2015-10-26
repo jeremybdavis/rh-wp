@@ -17,7 +17,6 @@ $desktop-width: 1024px;
 }
 
 * {
-  font-family: 'Raleway', sans-serif;
 
   a {
     text-decoration: none;
@@ -123,6 +122,12 @@ main {
       @include span-columns(12);
     }
 
+    .bio-content {
+      h1, p {
+        font-family: 'Raleway', sans-serif;
+      }
+    }
+
     @include tablet {
       .bio-content {
         @include span-columns(6);
@@ -169,9 +174,20 @@ main {
     }
   }
 
+  // MEDIA
+
+  .video, .photos, .insta, .shows {
+    h1 {
+      font-family: 'Cousine';
+      color: #CC434F;
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
 }
 
 footer {
+  font-family: 'Raleway', sans-serif;
   height: 70px;
   margin: 75px 0 0 0;
   color: #616161;
