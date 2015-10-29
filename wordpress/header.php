@@ -11,6 +11,8 @@
 
     <header>
 
+      <img src="http://robynharrismusic.com/wp-content/themes/robynharris/img/logo-large.png" alt="" />
+
       <nav>
         <?php
           $defaults = array(
@@ -22,8 +24,5 @@
         ?>
 
       </nav>
-
-      <h1>Robyn Harris</h1>
-      <p>\\ Singer Songwriter //</p>
 
     </header>

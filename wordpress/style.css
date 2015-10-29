@@ -47,6 +47,9 @@ header {
     font-family: 'Cousine';
     color: #CC434F;
     margin: 15px 0 5px 0; }
+    header img {
+      height: 125px;
+    }
 
 main {
   max-width: 68em;
@@ -64,12 +67,6 @@ main {
     main {
       padding: 0; } }
   main .hero {
-    background: url("img/rh1.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    position: relative;
-    height: 500px;
     margin: 0 0 75px 0; }
   main section h2 {
     font-family: 'Cousine';
@@ -151,6 +148,10 @@ main {
     color: #CC434F;
     font-size: 18px;
     font-weight: 400; }
+    main .shows ul li {
+      display: block;
+      padding: 0 0 10px 0;
+    }
 footer {
   font-family: 'Raleway', sans-serif;
   height: 70px;
