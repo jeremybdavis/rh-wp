@@ -8,7 +8,9 @@
 
 <main>
 
-  <div class="hero"></div>
+  <div class="hero">
+    <?php wd_slider(1); ?>
+  </div>
 
   <section class="bio">
     <div class="bio-content">
@@ -30,9 +32,9 @@
 
     <ul class="social">
       <li><a href="mailto:robynharrismusic@gmail.com"><i class="fa fa-envelope fa-2x"></i></a></li>
-      <li><a href="http://www.facebook.com"><i class="fa fa-facebook fa-2x"></i></a></li>
-      <li><a href="http://www.twitter.com"><i class="fa fa-twitter fa-2x"></i></a></li>
-      <li><a href="http://www.instagram.com"><i class="fa fa-instagram fa-2x"></i></a></li>
+      <li><a href="http://www.facebook.com/itsrobynharrismusic/"><i class="fa fa-facebook fa-2x"></i></a></li>
+      <li><a href="http://twitter.com/robynhmusic"><i class="fa fa-twitter fa-2x"></i></a></li>
+      <li><a href="http://instagram.com/robynharrismusic/"><i class="fa fa-instagram fa-2x"></i></a></li>
       <li><a href="http://www.youtube.com"><i class="fa fa-youtube-play fa-2x"></i></a></li>
     </ul>
 

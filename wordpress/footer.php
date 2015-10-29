@@ -2,7 +2,7 @@
 
   <div class="footer-content">
     <div class="footer-l">
-      Site Design By <a href="#">Jeremy Davis</a> &copy; <?php echo date('Y');?>
+      Site Design By <a href="http://www.jeremydavis.co">Jeremy Davis</a> &copy; <?php echo date('Y');?>
     </div>
 
     <div class="footer-r">
